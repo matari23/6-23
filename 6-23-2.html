@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script lang="java">
+
+        var dt = new Date();
+    
+        var dt_m = dt.getMonth() + 1;//0월부터시작
+        var dt_d = dt.getDate();
+        var dt_dd = dt.getDay();//0~6일요일 부터 시작
+    
+        var arrdaystr = ["일","월","화","수","목","금","토"]
+        document.write(dt_m + "월 " + dt_d + "일 (" + arrdaystr[dt_dd] +  ")")
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

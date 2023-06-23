@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script lang="java">
+        
+        setInterval(function(){
+            var time = new Date()
+            var hour = time.getHours()
+            var minute = time.getMinutes()
+            var seconds = time.getSeconds()
+            tt= document.querySelector(".text")
+            tt.innerHTML = hour + "시" + minute + "분" + seconds + "초"
+        },100)
+    </script>
+</head>
+<body>
+    <h1 class="text"></h1>
+</body>
+</html>

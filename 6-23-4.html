@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script lang="java">
+        //string 문자열
+        //.big():문자를 크게
+        //.small():문자를 작게
+        //.blink():깜빡이게
+        //.bold():굵은 굴씨체
+        //italics():기울임체
+        //strike():취소선
+        //sub():아래첨자
+        //sup():윗첨자
+        //fontsize(7):폰트사이즈
+        //fontcolor():폰트 색상
+        var str = new String("nice to meet you!")
+        var str ="nice to meet you!"
+        cnt = str.length;
+        document.write(cnt)
+
+        // document.write(cnt)
+        // document.write(str.big())
+        // document.write("글자를 크게 ".big() + "글자를 작게".small()+ "<br>")
+        // document.write("글자를 굵게 ".bold() + "글자를 타자기체".fixed()+ "<br>")
+        // document.write("글자를 이탤릭체 ".italics() + "글자를 가운데줄(취소선)".strike()+ "<br>")
+        // document.write("글자를 윗첨자 ".sub() + "글자를 아래첨자".sup()+ "<br>")
+        // document.write("글자를 깜박임" .blink() + "<br>")
+        // document.write("글자크기 ".fontsize(7) + "글자컬러".fontcolor("blue")+ "<br>")
+
+        function b_blink(){
+            var str = "jung kyung yong";
+            var res =str.blink()
+            document.getElementById("demo").innerHTML = res 
+        }
+
+
+    </script>
+</head>
+<body>
+    <button onclick="b_blink">클릭</button>
+    <p id="demo"></p>
+</body>
+</html>

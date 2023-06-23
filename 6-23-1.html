@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script lang="java">
+        var today = new Date();
+
+        var year = today.getYear();
+        var month = today.getMonth()+ 1;
+        //0~11월
+        var date = today.getDate();
+        var day = today.getDay();
+        //day는 요일을 가져오는 함수
+
+        var hours = today.getHours();
+        var minute = today.getMinutes();
+        var second = today.getSeconds();
+
+        switch(day){
+            case 0:
+                d_day= "일요일"; break;
+            case 1: 
+                d_day= "월요일"; break;
+            case 2: 
+                d_day= "화요일"; break;
+            case 3: 
+                d_day= "수요일"; break;
+            case 4: 
+                d_day= "목요일"; break;
+            case 5: 
+                d_day= "금요일"; break;
+            case 6: 
+                d_day= "토요일"; break;
+        }
+        document.write("<h3>오늘의 날짜:");
+        document.write(year + "년" + month + "월" + date + "일" +  d_day + "</h3>");
+        document.write("<h4> 오늘의 시간 :")
+        document.write( hours + "시" + minute + "분" + second + "초" + "</h4>" )
+    </script>
+</head>
+<body>
+   
+</body>
+</html>
